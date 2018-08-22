@@ -1,5 +1,17 @@
-class Q2
+class Q2 
 {
-public void main()
-{
-a=0;b=1;
+    public void main()
+    {
+         int s=0;int a = 0, b = 0, c = 1;
+          for(int i = 1; i >=1; i++)
+        {
+            a = b;
+            b = c;
+            c = a + b;
+            if(c%2==0)s+=c;
+            if(c>=4000000)break;
+            
+        }
+        System.out.println(s);
+    }
+}

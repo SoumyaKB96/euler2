@@ -1,7 +1,7 @@
 class Q4
 {
     public void main()
-    {int max=10*10;int p=0;
+    {int max=10*10;int p=1;
         for(int i=100;i<=999;i++)
         {
         
@@ -10,6 +10,7 @@ class Q4
             
             
             if(pal(p)&&p>max)max=p; 
+            
     }
     System.out.println(max);
 }

@@ -1,6 +1,6 @@
 class Q6
 {
-    public void main()
+    public static void main()
     {int s1=0,s2=0,diff=0;
         for(int i=1;i<=100;i++)
         {

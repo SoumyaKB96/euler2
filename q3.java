@@ -7,17 +7,22 @@ public class q3 {
 		long numm = 600851475143l;
 		
 		long max=0;
-		 
+		
 		for (long i = 2; i<numm/2; i++) {
-		    if (numm%i==0)
-		    {
-		    	for (int j = 2; j<Math.pow(i,0.5)+1;j++)
-		            if (i % j == 0)max=i;
-		    }
-		    		
-		    		
-		}
-		  System.out.println(max);
+		    if (numm%i==0 && isPrime(i))
+		    	max=i;
+		    
+		    		}
+		
+		
+		 System.out.println(max);
+		
+	}
+	static boolean isPrime(long n)
+	{
+		for(long i=2;i<n/2;i++)
+			{if(n%i==0)return false;}
+			return true;
 	}
 	
 }

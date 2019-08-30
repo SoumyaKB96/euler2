@@ -20,7 +20,9 @@ public class q3 {
 	}
 	static boolean isPrime(long n)
 	{
-		for(long i=2;i<Math.sqrt(n);i++)
+		if (n < 2) return false;
+        else if (n == 2) return true;
+		for(long i=2;i<Math.sqrt(n)+1;i++)
 			{if(n%i==0)return false;}
 			return true;
 	}

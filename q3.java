@@ -10,7 +10,7 @@ public class q3 {
 		
 		for (long i = 2; i<numm/2; i++) {
 		    if (numm%i==0 && isPrime(i))
-		    	max=i;
+		    {max=i;}
 		    
 		    		}
 		
@@ -20,7 +20,7 @@ public class q3 {
 	}
 	static boolean isPrime(long n)
 	{
-		for(long i=2;i<n/2;i++)
+		for(long i=2;i<Math.sqrt(n);i++)
 			{if(n%i==0)return false;}
 			return true;
 	}

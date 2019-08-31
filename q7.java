@@ -5,11 +5,13 @@ public class q7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int c=6,i=13;
-		while(c<=10001)
+		while(c<10001)
 		{
-			if(isprime(i++)==true)c++;
+			i+=2;
+			if(isprime(i)==true)c++;
+			
 		}
-		i--;
+		
         System.out.println(i);
 	}
 	public static boolean isprime(int n)
